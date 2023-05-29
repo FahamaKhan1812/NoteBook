@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NoteBook.DataService.Data;
 using NoteBook.DataService.IConfiguration;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,11 +16,21 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddControllers();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddApiVersioning(opt =>
+{   
+    // Provides to the client the different version that we have
+    opt.ReportApiVersions = true;
 
+    // this will allow the api
+    opt.AssumeDefaultVersionWhenUnspecified = true;
+    opt.DefaultApiVersion = ApiVersion.Default;
+
+});
 
 var app = builder.Build();
 

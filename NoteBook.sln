@@ -3,13 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteBooks.Api", "NoteBooks.Api\NoteBooks.Api.csproj", "{2FE8B5AC-950E-4330-AE2F-973371F87921}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteBooks.Api", "NoteBooks.Api\NoteBooks.Api.csproj", "{2FE8B5AC-950E-4330-AE2F-973371F87921}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteBook.DataService", "NoteBook.DataService\NoteBook.DataService.csproj", "{D2C06503-F52B-484E-847D-11CA2227B1C2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteBook.DataService", "NoteBook.DataService\NoteBook.DataService.csproj", "{D2C06503-F52B-484E-847D-11CA2227B1C2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteBook.Entities", "NoteBook.Entities\NoteBook.Entities.csproj", "{8A180001-273E-4434-B38A-0FDB38BCE9B4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteBook.Authentication", "NoteBook.Authentication\NoteBook.Authentication.csproj", "{E47922D5-C082-47DC-B090-D748A0C76B93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteBook.Entities", "NoteBook.Entities\NoteBook.Entities.csproj", "{8A180001-273E-4434-B38A-0FDB38BCE9B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{8A180001-273E-4434-B38A-0FDB38BCE9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A180001-273E-4434-B38A-0FDB38BCE9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A180001-273E-4434-B38A-0FDB38BCE9B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E47922D5-C082-47DC-B090-D748A0C76B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E47922D5-C082-47DC-B090-D748A0C76B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E47922D5-C082-47DC-B090-D748A0C76B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E47922D5-C082-47DC-B090-D748A0C76B93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
